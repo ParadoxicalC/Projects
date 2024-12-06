@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Quote</title>
+{% endblock %}
+
+{% block body %}
+<div class="bg-image"></div>
+<div class="the-text">
+    <h1>{{quote}}</h1>
+    <h2>- {% if author %}{{ author }}{% else %}Anonymous{% endif %}</h2>
+    <form action="/quote">
+        <input style="float:right; cursor: pointer;" class="redirect-button" type="submit" value="Next Quote!"/>
+    </form>
+    <h2 style="position: absolute; ">
+        <a href="https://www.google.com/search?q={{author}}"  style="color: white;">Who said this?</a>
+    </h2>
+</div>
+{% endblock %}

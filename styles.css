@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+* {
+box-sizing: border-box;
+}
+
+.bg-image {
+background-color: #84b4c4;
+filter: blur(8px);
+-webkit-filter: blur(8px);
+
+height: 100%; 
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.the-text {
+color: white;
+font-weight: bold;
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.redirect-button{
+    background-color: #3b89b0;
+    border: none;
+    padding: 13px 20px;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+    font-weight:bold;
+    font-size: medium;
+}
